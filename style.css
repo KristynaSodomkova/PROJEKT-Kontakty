@@ -15,3 +15,37 @@ Mobil   0 - 539px
 Tablet  540px - 959px (čti jako 540px a víc)
 PC      960px a víc
 */
+
+h1 {
+	text-align: center;
+}
+
+.member {
+    box-shadow: 0 0 1px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 30px;
+	margin: 30px;
+	text-align: center;
+}
+
+.member img {
+	border-radius: 50%;
+}
+
+@media (min-width: 540px) and (max-width: 960px) {
+	.members {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.member {
+		flex-basis: 40%;
+		display: flex;
+	}
+}
+
+@media (min-width: 961px) {
+	.members {
+		display: flex;
+	}
+}
